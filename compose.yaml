@@ -15,7 +15,7 @@ services:
     image: mysql:latest
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: myapp
+      MYSQL_DATABASE: fuel
       MYSQL_USER:
       MYSQL_PASSWORD:
     volumes:
