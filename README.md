@@ -27,4 +27,4 @@ Fuel Receipt management system is a simple web application for saving your fuel 
 
 ## License
 
-This project is licensed under the Unlicense - see the [LICENSE](https://github.com/Citadaskola-2023/Gustavs_P-DegvielasCeki/blob/main/LICENSE) file for details.
+This project is licensed under the Unlicense - see the [LICENSE](https://github.com/Citadaskola-2023/GustavsO-Degvielas-ceki/blob/main/LICENSE) file for details.
