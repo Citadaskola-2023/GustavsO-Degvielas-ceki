@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuel Receipt Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Fuel Receipt Form</h1>
+<form method="post">
+  <div>
+    <label for="license_plate">License Plate:</label>
+    <input type="text" id="license_plate" name="license_plate">
+  </div>
+  <div>
+    <label for="date_time">Date and Time:</label>
+    <input type="datetime-local" id="date_time" name="date_time">
+  </div>
+  <div>
+    <label for="odometer">Odometer:</label>
+    <input type="number" id="odometer" name="odometer">
+  </div>
+  <div>
+    <label for="petrol_station">Petrol Station:</label>
+    <input type="text" id="petrol_station" name="petrol_station">
+  </div>
+  <div>
+    <label for="fuel_type">Fuel Type:</label>
+    <input type="text" id="fuel_type" name="fuel_type">
+  </div>
+  <div>
+    <label for="refueled">Refueled (liters):</label>
+    <input type="number" id="refueled" step="0.01" name="refueled">
+  </div>
+  <div>
+    <label for="currency">Currency:</label>
+    <select id="currency" name="currency">
+      <option value="EUR">Euro (EUR)</option>
+      <option value="USD">United States Dollar (USD)</option>
+      <option value="GBP">British Pound (GBP)</option>
+      <option value="KWD">Kuwaiti Dinar (KWD)</option>
+      <option value="BHD">Bahraini Dinar (BHD)</option>
+      <option value="OMR">Omani Rial (OMR)</option>
+      <option value="JOD">Jordanian Dinar (JOD)</option>
+      <option value="KYD">Cayman Islands Dollar (KYD)</option>
+      <option value="GBP">Pound Sterling (GBP)</option>
+      <option value="CHF">Swiss Franc (CHF)</option>
+      <option value="BSD">Bahamian Dollar (BSD)</option>
+      <option value="PAB">Panamanian Balboa (PAB)</option>
+      <option value="BMD">Bermudian Dollar (BMD)</option>
+      <option value="CAD">Canadian Dollar (CAD)</option>
+      <option value="SGD">Singapore Dollar (SGD)</option>
+      <option value="BND">Brunei Dollar (BND)</option>
+      <option value="AUD">Australian Dollar (AUD)</option>
+      <option value="NZD">New Zealand Dollar (NZD)</option>
+      <option value="BGN">Bulgarian Lev (BGN)</option>
+      <option value="FJD">Fijian Dollar (FJD)</option>
+      <option value="BRL">Brazilian Real (BRL)</option>
+    </select>
+  </div>
+  <div>
+    <label for="fuel_price">Fuel Price:</label>
+    <input type="number" id="fuel_price" step="0.001" name="fuel_price">
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+</body>
+</html>

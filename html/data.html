@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Receipt Form</title>
+    <link rel="stylesheet" href="css/data.css">
+</head>
+<body>
+<h1>Fuel Receipt Search</h1>
+<form method="POST">
+    <table>
+        <tbody>
+        <tr>
+            <th>ID</th>
+            <td>
+                <label for="idInputMin">ID Min:</label>
+                <input type="number" id="idInputMin" name="idInputMin">
+            </td>
+            <td>
+                <label for="idInputMax">ID Max:</label>
+                <input type="number" id="idInputMax" name="idInputMax">
+            </td>
+        </tr>
+        <tr>
+            <th>License Plate</th>
+            <td>
+                <label for="licensePlateInput">License Plate:</label>
+                <input type="text" id="licensePlateInput" name="licensePlateInput">
+            </td>
+        </tr>
+        <tr>
+            <th>Date and Time</th>
+            <td>
+                <label for="dateTimeInputMin">Date Min:</label>
+                <input type="date" id="dateTimeInputMin" name="dateTimeInputMin">
+            </td>
+            <td>
+                <label for="dateTimeInputMax">Date Max:</label>
+                <input type="date" id="dateTimeInputMax" name="dateTimeInputMax">
+            </td>
+        </tr>
+        <tr>
+            <th>Odometer</th>
+            <td>
+                <label for="odometerInputMin">Odometer Min:</label>
+                <input type="number" id="odometerInputMin" name="odometerInputMin">
+            </td>
+            <td>
+                <label for="odometerInputMax">Odometer Max:</label>
+                <input type="number" id="odometerInputMax" name="odometerInputMax">
+            </td>
+        </tr>
+        <tr>
+            <th>Petrol Station</th>
+            <td>
+                <label for="petrolStationInput">Petrol Station:</label>
+                <input type="text" id="petrolStationInput" name="petrolStationInput">
+            </td>
+        </tr>
+        <tr>
+            <th>Fuel Type</th>
+            <td>
+                <label for="fuelTypeInput">Fuel Type:</label>
+                <input type="text" id="fuelTypeInput" name="fuelTypeInput">
+            </td>
+        </tr>
+        <tr>
+            <th>Refueled</th>
+            <td>
+                <label for="refueledInputMin">Refueled Min:</label>
+                <input type="number" step="0.01" id="refueledInputMin" name="refueledInputMin">
+            </td>
+            <td>
+                <label for="refueledInputMax">Refueled Max:</label>
+                <input type="number" step="0.01" id="refueledInputMax" name="refueledInputMax">
+            </td>
+        </tr>
+        <tr>
+            <th>Fuel Price</th>
+            <td>
+                <label for="fuelPriceInputMin">Fuel Price Min:</label>
+                <input type="number" step="0.01" id="fuelPriceInputMin" name="fuelPriceInputMin">
+            </td>
+            <td>
+                <label for="fuelPriceInputMax">Fuel Price Max:</label>
+                <input type="number" step="0.01" id="fuelPriceInputMax" name="fuelPriceInputMax">
+            </td>
+        </tr>
+        <tr>
+            <th>Currency</th>
+            <td>
+                <label for="currencyInput">Currency:</label>
+                <input type="text" id="currencyInput" name="currencyInput">
+            </td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <td>
+                <label for="totalInputMin">Total Min:</label>
+                <input type="number" step="0.01" id="totalInputMin" name="totalInputMin">
+            </td>
+            <td>
+                <label for="totalInputMax">Total Max:</label>
+                <input type="number" step="0.01" id="totalInputMax" name="totalInputMax">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button type="submit">Search</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+<div id="dataTableNames">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>License Plate</th>
+            <th>Date and Time</th>
+            <th>Odometer</th>
+            <th>Petrol Station</th>
+            <th>Fuel Type</th>
+            <th>Refueled (Litres)</th>
+            <th>Fuel Price</th>
+            <th>Currency</th>
+            <th>Total</th>
+        </tr>
+    </table>
+</div>
+<div id="dataTable"></div>
+</body>
+</html>
